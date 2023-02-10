@@ -7,7 +7,7 @@ include './include/fonctions.php';
 
 ?>
 <? dd($_SERVER)?>
-<p>Vous avez <? calculAge(1986); ?> ans</p>
+<!-- <p>Vous avez <?// $age ?> ans</p> -->
 <header>
     <?php $titre = 'Cours PHP'; ?>
     <h1><?= $titre ?></h1>

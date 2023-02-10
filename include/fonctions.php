@@ -20,12 +20,14 @@ function calculPrixTTC($prixht, $tva)
 }
 // echo calculPrixTTC(34, 10);
 //calcul age
-function calculAge($anneDeNaissance)
-{
-    $anneeEnCours = date("Y");
-    $age = $anneeEnCours - $anneDeNaissance;
-    return $age;
-}
+// function calculAge($anneDeNaissance)
+// {
+//     $anneeEnCours = date("Y");
+//     $age = $anneeEnCours - $anneDeNaissance;
+//     return $age;
+// }
+// echo calculAge(1986);
+
 
 
 //function calcul($a, $b = 5) $b- constante
@@ -70,14 +72,12 @@ function dd($valeur)
 //     return 3;
 // }
 // dd(maFonction());
-
 //function qui n'envoye rien !!
 //  function maFonction(): void
 // {
 //      return null;
 //  }
 //  dd(maFonction());
-
 //fonction pour envoyer un tableau ou int ou float
 //function maFonction(): array|int|float
 //pour envoyer toute les types
@@ -92,9 +92,8 @@ function dd($valeur)
 //     return $x;
 // }
 // dd(maFonction(34));
-
 //inverser une chaine de caractere
-$article="Je suis un article";
+$article = "Je suis un article";
 // echo strrev($article);
 //Transforme une chaine de caractere en majuscule
 // echo strtoupper($article);
@@ -105,4 +104,21 @@ $article="Je suis un article";
 // echo  str_replace("un","cet", $article);
 //Retourne un segment d'une chaine de caractere
 //renvoyer les 6premieres elements d'une chaine de caracteres
-echo substr($article, 0, 7);
+//dd(substr($article, 0, 6)); -- fontion dd ou echo
+
+// $x = 5;
+// $y = 3;
+// $z = 6;
+// function calcul($x)
+// {
+//     global $y;
+//      $y = 7;
+//     return $x + $y;
+// }
+// echo calcul(5);
+// dd($y);
+// global $z ;
+// $z=' le monde';
+// echo 'Hello' . $GLOBALS['z'];
+
+
