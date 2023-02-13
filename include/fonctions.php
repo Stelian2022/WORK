@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 //function calcul($prixHT, $tva)
 //{
 //  $prixHT = 34;
@@ -61,7 +62,7 @@ function dbug($valeur)
 
 function dd($valeur)
 {
-    echo "<pre style='background-color:green;overflow: auto;height: 450px;color:white;'>";
+    echo "<pre style='background-color:green;overflow: auto;height: 400px;color:white;'>";
     var_dump($valeur);
     echo "</pre>";
     die();
@@ -93,7 +94,7 @@ function dd($valeur)
 // }
 // dd(maFonction(34));
 //inverser une chaine de caractere
-$article = "Je suis un article";
+// $article = "Je suis un article";
 // echo strrev($article);
 //Transforme une chaine de caractere en majuscule
 // echo strtoupper($article);
@@ -120,5 +121,4 @@ $article = "Je suis un article";
 // global $z ;
 // $z=' le monde';
 // echo 'Hello' . $GLOBALS['z'];
-
 

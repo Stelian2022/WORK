@@ -1,5 +1,7 @@
+<?php include '../partials/menu.php'; ?>
 <?php
 include './fonctions.php';
+
 // dd('test');
 
 //Tableau indexé
@@ -112,4 +114,49 @@ $people = [
         'email' => 'ludu@caramail.com'
     ],
 ];
-dd($people);
+// dd($people);
+
+//Afficher les phrases suivantes
+//Le nom de Lucie est Dupond
+//L'email de Michel estmoumi..
+//Afficher les presonnes dans un tableau html nom/prenom /email
+// echo  'Le nom de ' . $people[2]["prenom"] . ' est ' . $people[2]["nom"];
+// echo "<pre> </pre>";
+// echo  'L-email de ' . $people[1]["prenom"] . " " . $people[1]["nom"] . ' est ' . $people[1]["email"];
+// echo "<pre> </pre>";
+
+
+?>
+<!-- <table class="montableau">
+    <tr>
+        <th>
+            <? //php
+            //echo    'Nom'  
+            ?>
+        </th>
+        <th><? //php
+            //echo   'Prenom'  
+            ?></th>
+        <th><?php
+            //echo   'Email'  
+            ?></th>
+    </tr>
+    <?php
+    //foreach ($people as $key => $val) { 
+    ?>
+
+        <tr>
+            <td><? //= $val['prenom'] 
+                    ?> </td>
+            <td><? //= $val['nom'] 
+                ?></td>
+            <td><? //= $val['email'] 
+                ?></td>
+        </tr>
+    <?php //}  
+    ?>
+</table> -->
+
+<?php
+$jsonFile=json_encode($people);
+dd($jsonFile);

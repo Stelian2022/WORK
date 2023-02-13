@@ -1,11 +1,5 @@
-<?php
-include './partials/header.php'; //si il n'existe pas il execute
-//la page qd meme 
-//require './partials/header.php'; // si il n'existe pas n'execute pas la page
-//include_once './partials/header.php ; //
-include './include/fonctions.php';
 
-?>
+
 <? dd($_SERVER)?>
 <!-- <p>Vous avez <?// $age ?> ans</p> -->
 <header>
@@ -21,6 +15,7 @@ include './include/fonctions.php';
             ad qui totam ratione reprehenderit voluptatem aliquam corrupti sunt
             adipisci alias nulla numquam accusantium.</p>
     </section>
+ 
 </main>
 
 

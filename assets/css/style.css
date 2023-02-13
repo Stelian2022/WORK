@@ -1,0 +1,10 @@
+.montableau{
+   color: blue;
+   border: 1px, solid, red;
+   background-color: aqua;
+   text-align: center;
+
+}
+.montableau tr td{
+    border: 1px solid black;
+}
