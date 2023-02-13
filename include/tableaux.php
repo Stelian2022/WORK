@@ -147,7 +147,7 @@ $people = [
 
         <tr>
             <td><? //= $val['prenom'] 
-                    ?> </td>
+                ?> </td>
             <td><? //= $val['nom'] 
                 ?></td>
             <td><? //= $val['email'] 
@@ -158,5 +158,27 @@ $people = [
 </table> -->
 
 <?php
-$jsonFile=json_encode($people);
-dd($jsonFile);
+// $jsonFile=json_encode($people);
+// dd($jsonFile);
+$jsonObj = '{
+"nom" : "Pontpasneuf",
+"prenom" : "Albert",
+"email" : "pontal@free.fr",
+"couleur" : ["rouge","vert","jaune"],
+"image" : "http://ximg.es/128x128/000/fff"
+}';
+
+$jsonArrayPhp = json_decode($jsonObj, true);
+// dd($jsonObj);
+// dd($jsonArrayPhp);
+?>
+<!-- Afficher unde card pour cette personne -->
+<figure>
+    <img src="<?= $jsonArrayPhp["image"] ?>">
+    <figcaption>
+        <ul>
+            <li><?= $jsonArrayPhp["nom"] ?><?= $jsonArrayPhp["prenom"] ?></li>
+            <li><?= $jsonArrayPhp["email"] ?></li>
+        </ul>
+    </figcaption>
+</figure>
