@@ -54,14 +54,14 @@ function calculPrixTTC($prixht, $tva)
 //fonction dd
 function dbug($valeur)
 {
-    echo "<pre>";
+    echo "<pre style='background-color:green;overflow: auto;height: 300px;color:white;'>";
     var_dump($valeur);
     echo "</pre>";
 }
 
 function dd($valeur)
 {
-    echo "<pre style='background-color:green;overflow: auto;height: 300px;color:white;'>";
+    echo "<pre style='background-color:green;overflow: auto;height: 450px;color:white;'>";
     var_dump($valeur);
     echo "</pre>";
     die();
